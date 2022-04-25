@@ -1,0 +1,98 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    padding: 20px 0px;
+    text-align: left;
+}
+.container-carousel {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1.44fr 0.7fr;
+    grid-template-rows: 50%;
+    gap: 0px 5px;
+    grid-template-areas:
+      "a b";
+  }
+  
+  .a {
+    grid-area: a;
+  }
+  
+  .b {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px 0px;
+    grid-template-areas:
+      "c"
+      "d";
+    grid-area: b;
+  }
+  
+  .c {
+    grid-area: c;
+  }
+  
+  .d {
+    grid-area: d;
+  }
+  
+  .carousel {
+    padding-left: 0px;
+    width: 100%;
+  }
+
+  .kategori {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .kategori-container {
+    display: flex;
+    height: 100%;
+    gap: 5px;
+    justify-content: space-around;
+  
+  }
+  
+  .kategori-container>div {
+    border: px solid black;
+    align-content: flex-start;
+  }
+  
+  .a-style {
+    text-decoration: none;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    text-align: center;
+    padding-top: 10px;
+    width: 10%;
+  }
+  
+  .a-style:hover {
+    color: black;
+  }
+  .flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    overflow: auto;
+    flex-direction: row;
+    padding-bottom: 20px;
+  }
+  .flex-container div{
+    width: 20%;
+  }
+  .admin-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    margin-top: 25px;
+    gap: 20px;
+  }
+  .admin-container div{
+    background-color: white;
+    border-radius: 5px;
+  }

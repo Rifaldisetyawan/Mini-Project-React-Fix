@@ -1,0 +1,31 @@
+{
+  "product": [
+    {
+      "name": "Asus ROG",
+      "quantity": "1",
+      "price": "23000000",
+      "image": "https://picsum.photos/200",
+      "id": 1
+    },
+    {
+      "name": "Lenovo m123 8871 pkks hauyb aaa sss ddddf ffffff",
+      "quantity": "12",
+      "price": "12500000",
+      "image": "https://picsum.photos/200",
+      "productId": 2,
+      "id": 2
+    }
+  ],
+  "users": [
+    {
+      "email": "admin@email.com",
+      "password": "123456",
+      "name": "admin",
+      "address": "jl.admin",
+      "join_date": "2022-04-25",
+      "phone_number": "12345",
+      "userId": 0,
+      "id": 0
+    }
+  ]
+}
