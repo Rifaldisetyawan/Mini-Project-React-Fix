@@ -16,6 +16,3 @@ Make an E-commerce
 - "sweetalert": "^2.1.2",
 - "web-vitals": "^2.1.4"
 
-## List of addons features that you implement in this project
-
-- 
