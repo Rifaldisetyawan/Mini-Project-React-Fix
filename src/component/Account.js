@@ -40,7 +40,7 @@ const Account = () => {
             setAddress(response.data[0].address)
             setJoin_date(response.data[0].join_date)
             setPhone_number(response.data[0].phone_number)
-            setUserId(response.data[0].userId)
+            setUserId(response.data[0].id)
             
         })
     }
@@ -67,7 +67,7 @@ const Account = () => {
 
     const selectUser = (id) => {
         handleOpen(true)
-        let post = posts[id - 1];
+        let post = posts[id];
         setEmail(post.email)
         setPassword(post.password)
         setName(post.name)
@@ -90,6 +90,9 @@ const Account = () => {
                 icon: "success",
                 button: false
             })
+            setTimeout(function () {
+                window.location.reload();
+            }, 900)
 
         } else {
             alert('Field tidak boleh kosong')
@@ -136,7 +139,7 @@ const Account = () => {
             </div>
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Edit Product</Modal.Title>
+                    <Modal.Title>Edit User</Modal.Title>
                 </Modal.Header>
 
                 <Modal.Body>
@@ -154,7 +157,7 @@ const Account = () => {
                             <Form.Control type="text"  placeholder="Enter Name" onChange={(e) => setName(e.target.value)} id="name" value={name} required />
                         </Form.Group>
                         <Form.Group className="mb-3">
-                            <Form.Label>Adress</Form.Label>
+                            <Form.Label>Address</Form.Label>
                             <Form.Control type="text" placeholder="Enter address" id="address" value={address} onChange={(e) => setAddress(e.target.value)} required />
                         </Form.Group>
                         <Form.Group className="mb-3">
