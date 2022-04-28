@@ -16,3 +16,9 @@ Make an E-commerce
 - "sweetalert": "^2.1.2",
 - "web-vitals": "^2.1.4"
 
+## Indikator :
+- CRUD : <br>-admin can CRUD product. <br>-info product : id, Name, quantity, price, image
+- Auth : <br>
+  -only admin can edit, delete product. <br>-can create account (register) and delete account. <br>-info account: id, email, password, name, address, join date, phone number
+- catalog : <br>-admin and user can see all list. <br>- admin and user can see all list by product attribute (name)
+- integration to API : data integrated by json-server
